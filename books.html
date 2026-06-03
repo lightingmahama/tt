@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakens books</title>
+    <link rel="stylesheet" href="css/books.css">
+</head>
+<body>
+    <!-- Sign Up Form Overlay -->
+    <div id="formOverlay">
+        <div class="form-card">
+            <h2>Sign Up</h2>
+            <form id="autoForm">
+                <p>Please provide your details to get started</p>
+                <div class="customer-form">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" placeholder="Your full name" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" placeholder="Your email address" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="Your phone number">
+
+                    <div class="choices">
+                        <label>Currency</label><br>
+                        <input class="ghana" type="radio" name="choice" value="ghana" required>
+                        <label for="ghana">Ghana Cedis</label><br>
+                        <input class="america" type="radio" name="choice" value="usd">
+                        <label for="usd">Dollars</label>
+                    </div>
+
+                    <label for="address">Address</label>
+                    <textarea id="address" placeholder="Your address"></textarea>
+                </div>
+                <button type="submit" class="submit-btnn" onclick="Currency()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <div class="logo">
+                <img src="images/images (31).jpeg" alt="Dakens Books Logo">
+                <h1>Dakens BOOKS</h1>
+            </div>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#book-grid">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button class="submit-btnn" onclick="toggleForm()">Get Started</button>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="right">
+            <h1>Discover Your New Great Book</h1>
+            <h2>Welcome to <span class="auto-typed"></span></h2>
+        </div>
+    </header>
+
+    <!-- Books Section -->
+    <section class="book-grid" id="book-grid">
+        <!-- Book 1 -->
+        <div class="book-card">
+            <img src="images/Screenshot 2026-04-30 135605.png" alt="Divine Tools Book Cover">
+            <h3>DIVINE TOOLS FOR EFFECTIVE CHRISTIANITY</h3>
+            <h4>by David Aguriba</h4>
+            <p class="result"></p>
+            <a href="pdf/DIVINE TOOLS FOR EFFECTIVE CHRISTIANITY(A5).pdf" class="download-btn" target="_blank">Read PDF</a>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+            <img src="images/Screenshot 2026-04-30 115538.png" alt="All For Your Good Book Cover">
+            <h3>ALL FOR YOUR GOOD</h3>
+            <h4>by David Aguriba</h4>
+            <p class="result2"></p>
+            <a href="pdf/ALL FOR YOUR GOOD.pdf" class="download-btn" target="_blank">Read PDF</a>
+        </div>
+
+        <!-- Book 3 
+        <div class="book-card">
+            <img src="images/download.jfif" alt="Oliver Twist Book Cover">
+            <h3>Oliver Twist</h3>
+            <p class="result3"></p>
+            <a href="#" class="download-btn" target="_blank">Read PDF</a>
+        </div>
+
+        Book 4
+        <div class="book-card">
+            <img src="images/images (1).jfif" alt="The Forest's Secret Book Cover">
+            <h3>The Forest's Secret</h3>
+            <p class="price"></p>
+            <a href="#" class="download-btn" target="_blank">Read PDF</a>
+        </div>
+
+         Book 5
+        <div class="book-card">
+            <img src="images/images.jfif" alt="Harry Potter Book Cover">
+            <h3>Harry Potter</h3>
+            <p class="result5"></p>
+            <a href="#" class="download-btn" target="_blank">Read PDF</a>
+        </div>
+        -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <p>Have questions about an order or a specific title? Send us a message!</p>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="How can we help you?" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Dakens BOOKS</h3>
+                <p>Your favorite local bookstore, with words from books to your heart.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#book-grid">Books</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#">Through Unipra North JHS</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dakens Books. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="javascript/books.js"></script>
+</body>
+</html>
